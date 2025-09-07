@@ -1,0 +1,9 @@
+# SSH keys
+
+*.pem
+*.key
+id_ed25519
+id_ed25519.pub
+
+
+# For now i will leave logs to be backed up
