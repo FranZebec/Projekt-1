@@ -1,7 +1,10 @@
+SIMPLE BACKUP
+
+
 WSL UBUNTU
 
 
-AWS server hosts TeamSpeak6 server and has project for backup on it
+AWS server hosts TeamSpeak6 server and has project with backup script on it
 
 
 
