@@ -14,3 +14,15 @@ building file list ... done
 
 sent 87 bytes  received 11 bytes  39.20 bytes/sec
 total size is 5  speedup is 0.05
+building file list ... done
+
+sent 87 bytes  received 11 bytes  21.78 bytes/sec
+total size is 5  speedup is 0.05
+building file list ... done
+
+sent 87 bytes  received 11 bytes  28.00 bytes/sec
+total size is 5  speedup is 0.05
+building file list ... done
+
+sent 87 bytes  received 11 bytes  21.78 bytes/sec
+total size is 5  speedup is 0.05
