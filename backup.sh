@@ -21,6 +21,13 @@ mkdir -p "$LOG_DIR"
 # Timestamp for logging
 TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
 
+# Run pre-checks
+/home/ubuntu/projekt/precheck.sh
+if [ $? -ne 0 ]; then
+    echo "Pre-check failed. Backup aborted."
+    exit 1
+fi
+
 # Rsync command with --delete-after
 rsync -avz --delete-after -e "ssh -i ~/.ssh/oracle_backup_key" "$SRC_DIR" "$DEST_SERVER":"$DEST_DIR"
 
@@ -31,3 +38,9 @@ else
     echo "[$TIMESTAMP] Backup failed!" >> "$LOG_FILE"
 fi
 
+# Run post-checks
+/home/ubuntu/projekt/postcheck.sh
+if [ $? -ne 0 ]; then
+    echo "Post-check failed. Please check logs."
+    exit 1
+fi

@@ -1,0 +1,17 @@
+[2025-09-10 20:32:29] Starting pre-checks...
+[2025-09-10 20:32:29] OK: Source directory exists.
+[2025-09-10 20:32:29] OK: rsync is installed.
+[2025-09-10 20:32:29] ERROR: Cannot connect to oracle-backup via SSH!
+[2025-09-10 20:33:05] Starting pre-checks...
+[2025-09-10 20:33:05] OK: Source directory exists.
+[2025-09-10 20:33:05] OK: rsync is installed.
+[2025-09-10 20:33:05] ERROR: Cannot connect to oracle-backup via SSH!
+[2025-09-10 20:37:14] Starting pre-checks...
+[2025-09-10 20:37:14] OK: Source directory exists.
+[2025-09-10 20:37:14] OK: rsync is installed.
+[2025-09-10 20:37:14] ERROR: Cannot connect to 92.5.93.250 via SSH!
+[2025-09-10 20:39:02] Starting pre-checks...
+[2025-09-10 20:39:02] OK: Source directory exists.
+[2025-09-10 20:39:02] OK: rsync is installed.
+[2025-09-10 20:39:02] OK: SSH connection to oracle-backup works.
+[2025-09-10 20:39:02] Pre-checks completed successfully.
