@@ -15,3 +15,8 @@
 [2025-09-10 20:39:02] OK: rsync is installed.
 [2025-09-10 20:39:02] OK: SSH connection to oracle-backup works.
 [2025-09-10 20:39:02] Pre-checks completed successfully.
+[2025-09-11 04:00:01] Starting pre-checks...
+[2025-09-11 04:00:01] OK: Source directory exists.
+[2025-09-11 04:00:01] OK: rsync is installed.
+[2025-09-11 04:00:01] OK: SSH connection to oracle-backup works.
+[2025-09-11 04:00:01] Pre-checks completed successfully.
