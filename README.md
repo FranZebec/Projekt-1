@@ -1,24 +1,42 @@
-SIMPLE BACKUP
+I have been educating myself in Linux terminal (Ubuntu).
+So far this is what i did (link of my github is below):
 
 
-WSL UBUNTU
+Created two servers:
+AWS (main server, running TeamSpeak and backup project scripts).
+Oracle Cloud (backup server).
+Set up SSH keys between PC ↔ AWS ↔ Oracle.
+
+Backup project:
+backup.sh: uses rsync to sync files from AWS to Oracle.
+archivelog.sh: compresses & deletes old logs weekly.
+precheck.sh: checks if rsync is installed, source folder exists and ssh works.
+postcheck.sh: verifies backup success.
+Created a logs directory to capture backup & cron activity.
+Cronjobs:
+Daily 4 AM backup.sh
+Weekly Sunday midnight archivelog.sh
 
 
-AWS server hosts TeamSpeak6 server and has project with backup script on it
+Git and GitHub:
+Initialized a Git repo.
+Added .gitignore (excludes only ssh keys for now)
+Learned how to push and pull from and to GitHub
 
 
+Docker:
+Installed Docker on AWS.
+Created a Dockerfile for backup projekt, built an image (backup-projekt).
+Ran a container (backup-container) from that image.
+Learned Docker commands (docker build, docker run, docker start, docker exec).
 
-Oracle serer is only used for backup
+Next steps:
 
+Dockerizing TeamSpeak 
 
+Use Docker Compose to run Backup + TeamSpeak side by side.
 
-Backup.sh script for backup of files inside project uses rsync --delete-after
-
-
-
-Cron job made for 4 am every day to run backup.sh, log files put in /projekt/logs for cron and backup.sh
-
-
+Integrate Dynatrace monitoring for both containers.
 
 
 /home
@@ -35,4 +53,4 @@ Cron job made for 4 am every day to run backup.sh, log files put in /projekt/log
            ├── precheck.sh
            └── postcheck.sh
 
-  1 contenter will be teamspeak and another backup project
+
